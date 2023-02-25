@@ -5,13 +5,13 @@
     <title>Sketchable</title>
     <script src="skiko.js"></script>
 </head>
-<script>
-    onWasmReady(()=>{
-        document.getElementById("LoadingScreen").style.display = "none";
-    })
-</script>
 <body>
-    <div id="LoadingScreen">
+    <script>
+        onWasmReady(()=>{
+            document.getElementById("LoadingScreen").style.display = "none";
+        })
+    </script>
+    <div id="LoadingScreen" style="display:none;">
         <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
     </div>
     <canvas id="ComposeTarget" width="600" height="600"></canvas>
